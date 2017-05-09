@@ -1,0 +1,14 @@
+{
+  "name": "sass_instalacja",
+  "version": "1.0.0",
+  "description": "> Do kompilacji możesz używasz narzędzia gulp, albo kompilować za pomocą Ruby.\r > Skorzystaj z przygotowanego już pliku gulpfile.js oraz skopiuj folder node_modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
