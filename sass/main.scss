@@ -15,6 +15,10 @@ section {
   background-position: center center;
 }
 
+.intro {
+  background-image: url(../images/Intro.jpg);
+}
+
 .side_menu {
   width: 300px;
   z-index: 10;
@@ -28,8 +32,54 @@ section {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211401', endColorstr='#140c01', GradientType=1 );
 }
 
-.intro {
-  background-image: url(../images/Intro.jpg);
+.clock {
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem;
+}
+
+.clock-face {
+  background-image: url(../images/ClockFace.png);
+  background-size: contain;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hand {
+  position: absolute;
+  transition: all 0.05s forward;
+  transition-timing-function: cubic-bezier(0.1, 2.01, 1,-0.18);
+}
+
+.hour {
+  top: 21%;
+  left: 21%;
+  height: 140px;
+  width: 140px;
+  background-image: url(../images/HourHand.png);
+  background-size: cover;
+}
+
+.minutes {
+  top: 15%;
+  left: 18%;
+  height: 160px;
+  width: 160px;
+  background-image: url(../images/MinuteHand.png);
+  background-size: cover;
+}
+
+.seconds {
+  top: 16%;
+  left: 18%;
+  height: 160px;
+  width: 120px;
+  transform-origin: 65%;
+  background-image: url(../images/SecondHand.png);
+  background-size: cover;
 }
 
 .about {
