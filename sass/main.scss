@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.side_menu {
+  width: 300px;
+  z-index: 10;
+  background: rgba(33,20,1,1);
+  background: -moz-linear-gradient(left, rgba(33,20,1,1) 0%, rgba(166,105,13,1) 6%, rgba(194,133,43,1) 49%, rgba(166,105,13,1) 95%, rgba(20,12,1,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33,20,1,1)), color-stop(6%, rgba(166,105,13,1)), color-stop(49%, rgba(194,133,43,1)), color-stop(95%, rgba(166,105,13,1)), color-stop(100%, rgba(20,12,1,1)));
+  background: -webkit-linear-gradient(left, rgba(33,20,1,1) 0%, rgba(166,105,13,1) 6%, rgba(194,133,43,1) 49%, rgba(166,105,13,1) 95%, rgba(20,12,1,1) 100%);
+  background: -o-linear-gradient(left, rgba(33,20,1,1) 0%, rgba(166,105,13,1) 6%, rgba(194,133,43,1) 49%, rgba(166,105,13,1) 95%, rgba(20,12,1,1) 100%);
+  background: -ms-linear-gradient(left, rgba(33,20,1,1) 0%, rgba(166,105,13,1) 6%, rgba(194,133,43,1) 49%, rgba(166,105,13,1) 95%, rgba(20,12,1,1) 100%);
+  background: linear-gradient(to right, rgba(33,20,1,1) 0%, rgba(166,105,13,1) 6%, rgba(194,133,43,1) 49%, rgba(166,105,13,1) 95%, rgba(20,12,1,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211401', endColorstr='#140c01', GradientType=1 );
+}
+
+.intro {
+  background-image: url(../images/Intro.jpg);
+}
+
+.about {
+  background-image: url(../images/AboutMe.jpg);
+}
+
+.projects {
+  background-image: url(../images/Projects.jpg);
+}
+
+.progress {
+  background-image: url(../images/Progress.jpg);
+}
