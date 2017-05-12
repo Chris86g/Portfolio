@@ -5,6 +5,7 @@
 
 body {
   box-sizing: border-box;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 section {
@@ -97,6 +98,17 @@ section {
         line-height: 1.5em;
       }
     }
+    li:hover{
+      letter-spacing: 2px;
+      background: rgba(33,20,1,1);
+background: -moz-linear-gradient(left, rgba(33,20,1,1) 0%, rgba(67,154,0,1) 6%, rgba(117,230,117,1) 51%, rgba(67,154,0,1) 95%, rgba(20,12,1,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33,20,1,1)), color-stop(6%, rgba(67,154,0,1)), color-stop(51%, rgba(117,230,117,1)), color-stop(95%, rgba(67,154,0,1)), color-stop(100%, rgba(20,12,1,1)));
+background: -webkit-linear-gradient(left, rgba(33,20,1,1) 0%, rgba(67,154,0,1) 6%, rgba(117,230,117,1) 51%, rgba(67,154,0,1) 95%, rgba(20,12,1,1) 100%);
+background: -o-linear-gradient(left, rgba(33,20,1,1) 0%, rgba(67,154,0,1) 6%, rgba(117,230,117,1) 51%, rgba(67,154,0,1) 95%, rgba(20,12,1,1) 100%);
+background: -ms-linear-gradient(left, rgba(33,20,1,1) 0%, rgba(67,154,0,1) 6%, rgba(117,230,117,1) 51%, rgba(67,154,0,1) 95%, rgba(20,12,1,1) 100%);
+background: linear-gradient(to right, rgba(33,20,1,1) 0%, rgba(67,154,0,1) 6%, rgba(117,230,117,1) 51%, rgba(67,154,0,1) 95%, rgba(20,12,1,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211401', endColorstr='#140c01', GradientType=1 );
+    }
     hr {
       // color: #7b5207;
       // background-color: #7b5207;
@@ -119,7 +131,7 @@ section {
   }
   img:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 0 1.5px #6b4207;
+    box-shadow: 0 0 0 1.5px #439a00;
   }
 }
 
