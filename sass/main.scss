@@ -91,13 +91,14 @@ section {
 
 .menu {
   ul{
-    li{
-      font-size: 2em;
-      padding-left: 1.2em;
-      a {
-        text-decoration: none;
+    a {
+      text-decoration: none;
+      li {
+        font-size: 2em;
+        padding-left: 1.2em;
         color: #000;
         line-height: 1.5em;
+        text-decoration: none;
       }
     }
     li:hover{
