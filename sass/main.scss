@@ -28,7 +28,7 @@ section {
   z-index: 10;
   transform: translate(0);
   overflow-x: hidden;
-  transition: 0.3s;
+  transition: 0.3s linear;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -179,4 +179,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97db01', end
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.project_wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project {
+  min-width: 300px;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.35);
 }

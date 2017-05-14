@@ -13,15 +13,22 @@ $(function() {
   });
 
   var sideMenu = $('#sideMenu');
-
-  $(window).scroll(function openSideMenu() {
-    sideMenu.removeClass('hide_menu');
-  })
-
   var close = menu.find('#close');
 
   close.on('click',function closeSideMenu() {
     sideMenu.addClass('hide_menu');
   })
+
+  var lastScrollTop = 0;
+  $(window).on('scroll', function() {
+      st = $(this).scrollTop();
+      if(st < lastScrollTop) {
+          console.log('up');
+      }
+      else {
+          sideMenu.removeClass('hide_menu');
+      }
+      lastScrollTop = st;
+  });
 
 });
