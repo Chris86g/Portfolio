@@ -26,6 +26,9 @@ section {
   width: 300px;
   height: 100vh;
   z-index: 10;
+  transform: translate(0);
+  overflow-x: hidden;
+  transition: 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -38,6 +41,11 @@ section {
   background: -ms-linear-gradient(left, rgba(33,20,1,1) 0%, rgba(166,105,13,1) 6%, rgba(194,133,43,1) 49%, rgba(166,105,13,1) 95%, rgba(20,12,1,1) 100%);
   background: linear-gradient(to right, rgba(33,20,1,1) 0%, rgba(166,105,13,1) 6%, rgba(194,133,43,1) 49%, rgba(166,105,13,1) 95%, rgba(20,12,1,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211401', endColorstr='#140c01', GradientType=1 );
+}
+
+.hide_menu {
+  transform: translate(-300px);
+  overflow-x: hidden;
 }
 
 .clock {

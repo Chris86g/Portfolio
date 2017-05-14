@@ -12,4 +12,16 @@ $(function() {
     }, 1500);
   });
 
+  var sideMenu = $('#sideMenu');
+
+  $(window).scroll(function openSideMenu() {
+    sideMenu.removeClass('hide_menu');
+  })
+
+  var close = menu.find('#close');
+
+  close.on('click',function closeSideMenu() {
+    sideMenu.addClass('hide_menu');
+  })
+
 });
