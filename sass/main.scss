@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family: 'chopin_scriptregular';
+    src: url('../fonts/chopinscript-webfont.woff2') format('woff2'),
+         url('../fonts/chopinscript-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +23,6 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
-
-.intro {
-  background-image: url(../images/Intro.jpg);
-  width: 100%;
 }
 
 .side_menu {
@@ -157,6 +161,17 @@ background: -o-radial-gradient(center, ellipse cover, rgba(151,219,1,1) 0%, rgba
 background: -ms-radial-gradient(center, ellipse cover, rgba(151,219,1,1) 0%, rgba(151,219,1,1) 18%, rgba(67,154,0,1) 64%, rgba(33,20,1,1) 95%, rgba(33,20,1,1) 100%);
 background: radial-gradient(ellipse at center, rgba(151,219,1,1) 0%, rgba(151,219,1,1) 18%, rgba(67,154,0,1) 64%, rgba(33,20,1,1) 95%, rgba(33,20,1,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97db01', endColorstr='#211401', GradientType=1 );
+  }
+}
+
+.intro {
+  background-image: url(../images/Intro.jpg);
+  width: 100%;
+  h2 {
+    font-family: 'chopin_scriptregular', sans-serif;
+  }
+  h3 {
+    font-family: 'chopin_scriptregular', sans-serif;
   }
 }
 
