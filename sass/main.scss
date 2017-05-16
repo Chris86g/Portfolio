@@ -174,7 +174,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97db01', end
     justify-content: space-between;
     h1 {
       font-size: 4em;
-      text-shadow: 0 0 3px #51b2fb;
+      text-shadow: 0 0 5px #51b2fb;
       margin: 1em;
     }
     .name_wrap {
@@ -188,6 +188,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97db01', end
       h3 {
         font-size: 2em;
         text-shadow: 0 0 3px #51b2fb;
+        text-align: right;
       }
     }
   }
@@ -195,6 +196,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97db01', end
 
 .about {
   background-image: url(../images/AboutMe.jpg);
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    h3 {
+      margin: 0.6em;
+      font-size: 1.8em;
+    }
+    p {
+      margin: .4em;
+      font-size: 1.2em;
+    }
+  }
 }
 
 .projects {
