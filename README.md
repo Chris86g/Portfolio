@@ -8,9 +8,3 @@ This is my small portfolio, which I created with:
 - SASS,
 - Javascript,
 - jQuery,
-
-### I love my aside menu ! <3
-
-### and Steampunk :)
-
-### and high-motivated people, full of positive energy. Can I play you some of my music?
