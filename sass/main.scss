@@ -37,11 +37,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211401', end
 }
 
 ::-webkit-scrollbar-button:vertical:increment {
-
+  background-image: url(../images/down.png);
+  background-size: contain;
 }
 
 ::-webkit-scrollbar-button:vertical:decrement {
-
+  background-image: url(../images/up.png);
+  background-size: contain;
 }
 
 ::-webkit-scrollbar-button:vertical:hover {
