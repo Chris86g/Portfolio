@@ -239,6 +239,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97db01', end
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 40px 0 40px;
     h1 {
       font-size: 4em;
       text-shadow: 0 0 5px #51b2fb;
@@ -268,13 +269,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97db01', end
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin: 0 40px 0 340px;
     h3 {
       margin: 0.6em;
       font-size: 1.8em;
+      color: #850;
     }
     p {
       margin: .4em;
       font-size: 1.2em;
+      color: #960;
     }
   }
 }
@@ -290,25 +294,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97db01', end
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin: 0 40px 0 340px;
     h3 {
       margin: 0.6em;
       font-size: 1.8em;
+      color: #850;
     }
     p {
       margin: .4em;
       font-size: 1.2em;
+      color: #960;
     }
   }
 }
 
 .container {
-  background-color: rgba(0,0,0, 0.5);
   height: 100vh;
-  margin: 0 40px 0 340px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.shade {
+  background-color: rgba(0,0,0, 0.8);
 }
 
 .project_wrapper {
