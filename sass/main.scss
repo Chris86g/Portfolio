@@ -236,7 +236,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97db01', end
   background-image: url(../images/Intro.jpg);
   width: 100%;
   .container {
-    margin: 0 40px 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -303,6 +302,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97db01', end
 }
 
 .container {
+  background-color: rgba(0,0,0, 0.5);
   height: 100vh;
   margin: 0 40px 0 340px;
   display: flex;
