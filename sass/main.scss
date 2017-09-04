@@ -95,7 +95,7 @@ section {
   min-height: 100vh;
   height: 100%;
   min-width: 300px;
-  background-color: rgba(0,0,0, 0.85);
+  background-color: rgba(0,0,0, 0.75);
 }
 
 .side_menu {
@@ -289,7 +289,8 @@ section {
     h3 {
       margin: 0.6em;
       font-size: 1.8em;
-      color: #850;
+      letter-spacing: 0.1em;
+      color: #c90;
     }
 
     p {
@@ -306,13 +307,15 @@ section {
 
 .projects {
   background-image: url("../images/Projects.jpg");
+  // background-size: cover;
+  // height: 100%;
 
   .container {
     margin: 0 40px 0 340px;
 
     h3 {
-      color: #7b5207;
-      letter-spacing: 1px;
+      color: #c90;
+      letter-spacing: 2px;
     }
 
     .project_wrapper {
@@ -338,14 +341,15 @@ section {
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     margin: 0 40px 0 340px;
 
     h3 {
       margin: 0.6em;
+      letter-spacing: 0.1em;
       font-size: 1.8em;
-      color: #850;
+      color: #c90;
     }
 
     p {
@@ -367,23 +371,21 @@ section {
         flex-direction: column;
         justify-content: space-between;
         border: none;
-
-        input {
-          padding: 10px;
-          width: 480px;
-        }
+        font-size: 1.2em;
 
         textarea {
-          width: 480px;
           height: 200px;
         }
 
         input,
         textarea {
+          width: 560px;
+          padding: 10px;
           margin: 10px;
           border: 1px solid #850;
           border-radius: 10px;
           background-color: rgba(136, 85, 0, 0.2);
+          color: #ccc;
         }
 
         .submit {
@@ -426,8 +428,17 @@ section {
         }
       }
     }
+    footer {
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      p {
+        color: #520;
+      }
+    }
   }
 }
+
 
 .container {
   height: 100vh;
@@ -441,4 +452,62 @@ section {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.come-in {
+  transform: translateX(-1500px);
+  animation: come-in 0.8s cubic-bezier(0.25, 0.1, 0.64, 1.29) forwards;
+}
+
+.a1 {
+  animation-delay: 1s;
+}
+
+.a2 {
+  animation-delay: 1.5s;
+}
+
+.a3 {
+  animation-delay: 2.5s;
+}
+
+.a4 {
+  animation-delay: 8s;
+}
+
+.a5 {
+  animation-delay: 8.5s;
+}
+
+.c1 {
+  animation-delay: 1s;
+}
+
+.c2 {
+  animation-delay: 3s;
+}
+
+.c3 {
+  animation-delay: 7s;
+}
+
+.c4 {
+  animation-delay: 7.5s;
+}
+
+.c5 {
+  animation-delay: 8s;
+}
+
+.c6 {
+  animation-delay: 8.5s;
+}
+
+.already-visible {
+  transform: translateX(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateX(0) translateY(0); }
 }
