@@ -95,7 +95,23 @@ section {
   min-height: 100vh;
   height: 100%;
   min-width: 300px;
-  background-color: rgba(0,0,0, 0.75);
+  background-color: rgba(0,0,0, 0);
+}
+
+.intro .shade {
+  animation: shade-in 1s forwards;
+  animation-delay: 2s;
+}
+
+section .shade-in {
+  animation: shade-in 1s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes shade-in {
+  to {
+    background-color: rgba(0,0,0, 0.75);
+  }
 }
 
 .side_menu {
@@ -252,9 +268,93 @@ section {
     margin: 0 40px;
 
     h1 {
-      font-size: 4em;
+      font-size: 3em;
       text-shadow: 0 0 5px #51b2fb;
       margin: 1em;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .word {
+        padding: 20px;
+        .welcome {
+          visibility: hidden;
+          transform: scale(0.2);
+        }
+
+        .welcome-animation {
+          animation: show-letters 0.4s forwards;
+        }
+
+        @keyframes show-letters {
+          0% {
+            visibility: hidden;
+            transform: scale(0.2);
+          }
+          10% {
+            visibility: visible;
+            transform: scale(2);
+          }
+          100% {
+            visibility: visible;
+            transform: scale(1);
+          }
+        }
+
+        .w1 {
+          animation-delay: 3s;
+        }
+        .e2 {
+          animation-delay: 3.3s;
+        }
+        .l3 {
+          animation-delay: 3.6s;
+        }
+        .c4{
+          animation-delay: 3.9s;
+        }
+        .o5 {
+          animation-delay: 4.2s;
+        }
+        .m6 {
+          animation-delay: 4.5s;
+        }
+        .e7 {
+          animation-delay: 4.8s;
+        }
+        .t8 {
+          animation-delay: 5.4s;
+        }
+        .o9 {
+          animation-delay: 5.7s;
+        }
+        .m10 {
+          animation-delay: 6.3s;
+        }
+        .y11 {
+          animation-delay: 6.6s;
+        }
+        .w12 {
+          animation-delay: 7.2s;
+        }
+        .e13 {
+          animation-delay: 7.5s;
+        }
+        .b14 {
+          animation-delay: 7.8s;
+        }
+        .s15 {
+          animation-delay: 8.1s;
+        }
+        .i16 {
+          animation-delay: 8.4s;
+        }
+        .t17 {
+          animation-delay: 8.7s;
+        }
+        .e18 {
+          animation-delay: 9s;
+        }
+      }
     }
 
     .name_wrap {
@@ -438,7 +538,6 @@ section {
     }
   }
 }
-
 
 .container {
   height: 100vh;

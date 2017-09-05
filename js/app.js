@@ -69,7 +69,34 @@ $(function() {
         el.addClass("come-in");
       }
     });
-
   });
 
+  var intro = $(".intro"),
+      welcome = $(".welcome");
+
+  if (intro.visible(true)) {
+    welcome.addClass("welcome-animation");
+  }
+
+
+  var allShades = $(".shade");
+
+  // allShades.each(function(i, el) {
+  //   var el = $(el);
+  //
+  //   if (el.visible(true)) {
+  //     el.addClass("already-visible");
+  //   }
+  // });
+
+  win.scroll(function(event) {
+
+    allShades.each(function(i, el) {
+      var el = $(el);
+
+      if (el.visible(true)) {
+        el.addClass("shade-in");
+      }
+    });
+  });
 });
