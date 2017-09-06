@@ -393,8 +393,12 @@ section .shade-in {
           transform: scale(0.2);
           text-shadow: 0 0 3px #51b2fb, 0 0 7px #fff;
         }
-        80% {
-          transform: scale(1.2);
+        50% {
+          transform: scale(1.05);
+          text-shadow: 0 0 3px #51b2fb, 0 0 7px #fff;
+        }
+        90% {
+          transform: scale(1);
           text-shadow: 0 0 3px #51b2fb, 0 0 7px #fff;
         }
         100% {
@@ -449,6 +453,7 @@ section .shade-in {
     margin: 0 40px 0 340px;
 
     h3 {
+      font-size: 1.5em;
       color: #c90;
       letter-spacing: 2px;
     }
@@ -465,8 +470,35 @@ section .shade-in {
         border: solid 1.5px #7b5207;
         outline: solid 0.1px #aaa;
         margin: 10px;
+
+        img {
+          width: 300px;
+          height: 100%;
+        }
       }
     }
+  }
+}
+
+.unknown {
+  font-size: 10em;
+  color: #c90;
+  text-shadow: 0 0 5px #000, 0 0 10px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotate {
+  animation: rotate 0.1s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 

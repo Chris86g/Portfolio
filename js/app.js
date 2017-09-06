@@ -78,16 +78,7 @@ $(function() {
     welcome.addClass("welcome-animation");
   }
 
-
   var allShades = $(".shade");
-
-  // allShades.each(function(i, el) {
-  //   var el = $(el);
-  //
-  //   if (el.visible(true)) {
-  //     el.addClass("already-visible");
-  //   }
-  // });
 
   win.scroll(function(event) {
 
@@ -99,4 +90,15 @@ $(function() {
       }
     });
   });
+
+  var unknown = $(".unknown"),
+      qMark = $(".q-mark");
+
+  unknown.mouseenter(function() {
+    qMark.addClass("rotate");
+  })
+
+  unknown.mouseleave(function() {
+    qMark.removeClass("rotate");
+  })
 });
