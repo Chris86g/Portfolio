@@ -470,10 +470,60 @@ section .shade-in {
         border: solid 1.5px #7b5207;
         outline: solid 0.1px #aaa;
         margin: 10px;
+        position: relative;
+        overflow: hidden;
+
+        div {
+          height: 100%;
+          position: absolute;
+          filter:sepia(85%);
+        }
+
+        div:hover {
+          transform: scale(1.1);
+          transition: .2s;
+          filter:sepia(0%);
+        }
 
         img {
           width: 300px;
           height: 100%;
+          visibility: hidden;
+        }
+
+        .slide-in {
+          animation: slide-in 0.5s ease-out forwards;
+        }
+
+        @keyframes slide-in {
+          0% {
+            transform: translateY(250px);
+            visibility: hidden;
+          }
+          100% {
+            transform: translateY(0);
+            visibility: visible;
+          }
+        }
+
+        .treasure {
+          animation-delay: 7s;
+        }
+
+        .shamrock {
+          animation-delay: 5s;
+        }
+
+        .drum {
+          animation-delay: 6s;
+        }
+
+        .wine {
+          animation-delay: 5.5s;
+        }
+
+        .nasa {
+          animation-delay: 6.5s;
         }
       }
     }
@@ -515,7 +565,7 @@ section .shade-in {
     h3 {
       margin: 0.6em;
       letter-spacing: 0.1em;
-      font-size: 1.8em;
+      font-size: 1.6em;
       color: #c90;
     }
 
@@ -579,7 +629,6 @@ section .shade-in {
 
         .submit:hover {
           color: black;
-          background-color: lightblue;
           transform: scale(1.1);
           box-shadow: 0 0 0 0.5px #97db01;
           border: 1px #77bb01 solid;

@@ -101,4 +101,18 @@ $(function() {
   unknown.mouseleave(function() {
     qMark.removeClass("rotate");
   })
+
+  var projImg = $(".project").find('img');
+
+  win.scroll(function(event) {
+
+    projImg.each(function(i, el) {
+      var el = $(el);
+
+      if (el.visible(true)) {
+        el.addClass("slide-in");
+      }
+    });
+  });
+
 });
