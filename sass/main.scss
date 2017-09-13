@@ -122,6 +122,9 @@ section .shade-in {
   transform: translate(0);
   overflow-x: hidden;
   transition: 0.3s linear;
+}
+
+.menu_background {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -189,7 +192,7 @@ section .shade-in {
   background-size: cover;
 }
 
-.menu {
+.menu, .mobile_nav {
   ul {
     a {
       text-decoration: none;
@@ -230,7 +233,7 @@ section .shade-in {
   display: flex;
   justify-content: center;
 
-  img {
+  img, .hamburger i {
     height: 30px;
     width: 30px;
     padding: 0.2rem;
@@ -240,7 +243,7 @@ section .shade-in {
     border-radius: 50%;
   }
 
-  img:hover {
+  img:hover, .hamburger i:hover {
     transform: scale(1.1);
     box-shadow: 0 0 0 0.5px #97db01;
     border: 1px #77bb01 solid;
@@ -726,4 +729,58 @@ section .shade-in {
 
 @keyframes come-in {
   to { transform: translateX(0) translateY(0); }
+}
+
+.mobile_menu {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  display: none;
+}
+
+@media (max-width: 999px) {
+  .side_menu {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: flex;
+    li {
+      text-align: center;
+    }
+  }
+
+  .mobile_nav {
+    display: block;
+  }
+
+  .mobile_menu .hide {
+    display: none;
+  }
+
+
+  .socialmedia span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    margin: 0 40px;
+  }
+
+  .contact form {
+    fieldset {
+      width: 300px;
+      input,
+      textarea {
+        width: 260px;
+      }
+      .submit {
+        width: 100px;
+      }
+    }
+  }
+
+
 }

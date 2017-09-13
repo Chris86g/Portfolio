@@ -1,5 +1,6 @@
 $(function() {
 
+// scroll
   var menu = $('.menu');
   var links = menu.find('a');
   var href = menu.find('href');
@@ -12,6 +13,7 @@ $(function() {
     }, 1500);
   });
 
+// sidemenu
   var sideMenu = $('#sideMenu');
   var close = menu.find('#close');
 
@@ -31,6 +33,7 @@ $(function() {
       lastScrollTop = st;
   });
 
+// visibility
   (function($) {
     $.fn.visible = function(partial) {
 
@@ -49,6 +52,7 @@ $(function() {
 
   })(jQuery);
 
+// show modules
   var win = $(window),
       allMods = $(".module");
 
@@ -71,6 +75,7 @@ $(function() {
     });
   });
 
+// welcome animations
   var intro = $(".intro"),
       welcome = $(".welcome");
 
@@ -91,6 +96,7 @@ $(function() {
     });
   });
 
+// spinner
   var unknown = $(".unknown"),
       qMark = $(".q-mark");
 
@@ -102,6 +108,7 @@ $(function() {
     qMark.removeClass("rotate");
   })
 
+// slide-in project images
   var projImg = $(".project").find('img');
 
   win.scroll(function(event) {
@@ -114,5 +121,19 @@ $(function() {
       }
     });
   });
+
+// hamburger
+  var hamburger = $("#hamburger"),
+      mobileNav = $("#mobileNav");
+      closeMobileNav = mobileNav.find('li');
+
+  hamburger.on('click', function() {
+    mobileNav.toggleClass('hide');
+  });
+
+  closeMobileNav.on('click', function() {
+    mobileNav.addClass('hide');
+  });
+
 
 });
