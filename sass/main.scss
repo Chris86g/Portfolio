@@ -107,6 +107,7 @@ section .shade-in {
   animation: shade-in 1s forwards;
   animation-delay: 2s;
 }
+
 @keyframes shade-in {
   to {
     background-color: rgba(0,0,0, 0.75);
@@ -219,8 +220,6 @@ section .shade-in {
     }
 
     hr {
-      // color: #7b5207;
-      // background-color: #7b5207;
       border: none;
       border-top: 1px #6b4207 solid;
       border-bottom: 0.5px #ccc solid;
@@ -252,7 +251,6 @@ section .shade-in {
     box-shadow: 0 0 0 0.5px #97db01;
     border: 1px #77bb01 solid;
     border-radius: 50%;
-    // background-color: #77bb01;
     background: rgba(151,219,1,1);
     background: -moz-radial-gradient(center, ellipse cover, rgba(151,219,1,1) 0%, rgba(151,219,1,1) 18%, rgba(67,154,0,1) 64%, rgba(33,20,1,1) 95%, rgba(33,20,1,1) 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(151,219,1,1)), color-stop(18%, rgba(151,219,1,1)), color-stop(64%, rgba(67,154,0,1)), color-stop(95%, rgba(33,20,1,1)), color-stop(100%, rgba(33,20,1,1)));
@@ -277,7 +275,8 @@ section .shade-in {
 
     h1 {
       font-size: 4em;
-      text-shadow: 0 0 5px #51b2fb;
+      text-shadow: 0 0 5px #51b2fb; /* Modern browsers*/
+      filter: progid:DXImageTransform.Microsoft.Shadow(direction  = 0, stren‌​gth = 5, color = #51b2fb); /* IE */
       margin: 1em;
       display: flex;
       justify-content: center;
@@ -304,13 +303,15 @@ section .shade-in {
           10% {
             visibility: visible;
             transform: scale(2);
-            text-shadow: 0 0 3px #51b2fb, 0 0 7px #fff;
+            text-shadow: 0 0 3px #51b2fb, 0 0 7px #fff; /* Modern browsers*/
+            filter: progid:DXImageTransform.Microsoft.Shadow(direction = 0 , stren‌​gth = 10 ,color = #fff) /* IE */
           }
 
           100% {
             visibility: visible;
             transform: scale(1);
-            text-shadow: 0 0 3px #51b2fb;
+            text-shadow: 0 0 3px #51b2fb; /* Modern browsers*/
+            filter: progid:DXImageTransform.Microsoft.Shadow(direction  = 0, stren‌​gth = 5, color = #51b2fb); /* IE */
           }
         }
 
@@ -509,6 +510,7 @@ section .shade-in {
         overflow: hidden;
 
         div {
+          min-width: 300px;
           height: 100%;
           position: absolute;
           filter:sepia(85%);
@@ -643,7 +645,7 @@ section .shade-in {
         textarea {
           border: 1px solid #850;
           background-color: rgba(136, 85, 0, 0.2);
-          color: #ccc;
+          color: #c90;
         }
 
         .error {
@@ -663,6 +665,7 @@ section .shade-in {
         }
 
         .submit {
+          align-self: center;
           width: 200px;
           color: #000;
           font-size: 15px;
@@ -719,7 +722,6 @@ section .shade-in {
 }
 
 .container {
-  // height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
