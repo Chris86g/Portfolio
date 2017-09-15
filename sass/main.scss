@@ -295,6 +295,7 @@ section .shade-in {
         .welcome-animation {
           animation: show-letters 0.4s forwards;
         }
+
         @keyframes show-letters {
           0% {
             visibility: hidden;
@@ -917,7 +918,7 @@ section .shade-in {
     }
 
     .project img {
-      animation-delay: 2s !important;
+      animation-delay: 1s !important;
     }
 
     .unknown {

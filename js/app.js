@@ -146,7 +146,7 @@ $(function() {
       submit = form.find('input[type=submit]');
 
   error.innerText = '';
-  success.innerText = '';    
+  success.innerText = '';
 
   submit.on('click',function () {
     event.preventDefault();
@@ -159,33 +159,61 @@ $(function() {
         email = emailInput.val(),
         message = messageInput.val();
 
-    if (name.length <= 2) {
-      error.text(function() {
-        error.addClass('show');
-        return error.text() + 'name is to short ';
-      });
+    var isNameValid = function () {
+      if (name.length <= 2) {
+          error.addClass('show');
+          error.text('name is to short ');
+          return false;
+      } else {
+          return true;
+      }
     }
+    isNameValid();
 
-    if (email.indexOf('@') == -1) {
-      error.text(function() {
-        error.addClass('show');
-        return error.text() + "email is not valid ";
-      });
+    var isAtPresent = function () {
+      if (email.indexOf('@') == -1) {
+          error.addClass('show');
+          error.text("email is not valid ");
+          return false;
+      } else {
+          return true;
+      }
     }
+    isAtPresent();
 
-    if (email.indexOf('.') == -1) {
-      error.text(function() {
-        error.addClass('show');
-        return error.text() + "email is not valid ";
-      });
+    var isDotPresent = function () {
+      if (email.indexOf('.') == -1) {
+          error.addClass('show');
+          error.text("email is not valid ");
+          return false;
+      } else {
+          return true;
+      }
     }
+    isDotPresent();
 
-    if (message.length <= 10) {
-      error.text(function() {
-        error.addClass('show');
-        return error.text() + "message is too short ";
-      });
+    var isMessageLongEnough = function () {
+      if (message.length <= 10) {
+          error.addClass('show');
+          error.text("message is too short ");
+          return false;
+      } else {
+          return true;
+      }
     }
+    isMessageLongEnough();
+
+    function checkForm() {
+      var isValid = isNameValid() && isAtPresent() && isDotPresent() && isMessageLongEnough ();
+      if (isValid === false) {
+        event.preventDefault();
+      }
+      if (isValid === true) {
+        success.addClass('show');
+        success.text('Message sent! ');
+      }
+    }
+    checkForm();
   })
 
 });
