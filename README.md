@@ -1,6 +1,8 @@
 # Portfolio
 
-## work in progress, when it will be ready I'll set in on gh-pages
+## PHP in progress.
+### The contact form is validating in JS.
+### When I finish, I'll move this website somwhere else.
 
 This is my small portfolio, which I created with:
 - HTML5,

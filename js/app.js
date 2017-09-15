@@ -127,16 +127,17 @@ $(function() {
       mobileNav = $("#mobileNav");
       closeMobileNav = mobileNav.find('li');
 
+  mobileNav.slideUp();
+
   hamburger.on('click', function() {
-    mobileNav.toggleClass('hide');
+    mobileNav.slideToggle();
   });
 
   closeMobileNav.on('click', function() {
-    mobileNav.addClass('hide');
+    mobileNav.slideUp();
   });
 
 // form validation
-
   var form = $('form'),
       nameInput = form.find('#nameInput'),
       emailInput = form.find('#emailInput'),
