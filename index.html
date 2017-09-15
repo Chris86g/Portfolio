@@ -189,9 +189,11 @@
         </p>
         <form>
           <fieldset>
-            <input type="text" name="name" placeholder="name" class="module c3">
-            <input type="email" name="email" placeholder="email" class="module c4">
-            <textarea = placeholder="type your message here" class="module c5"></textarea>
+            <input type="text" name="name" placeholder="name" class="module c3" id="nameInput">
+            <input type="email" name="email" placeholder="email" class="module c4" id="emailInput">
+            <textarea = placeholder="type your message here" class="module c5" id="messageInput"></textarea>
+            <div class="error"></div>
+            <div class="success"></div>
             <input type="submit" class="submit module c6" value="send">
           </fieldset>
         </form>

@@ -135,5 +135,57 @@ $(function() {
     mobileNav.addClass('hide');
   });
 
+// form validation
+
+  var form = $('form'),
+      nameInput = form.find('#nameInput'),
+      emailInput = form.find('#emailInput'),
+      messageInput = form.find('#messageInput'),
+      error = form.find('.error'),
+      success = form.find('.success'),
+      submit = form.find('input[type=submit]');
+
+  error.innerText = '';
+  success.innerText = '';    
+
+  submit.on('click',function () {
+    event.preventDefault();
+    error.innerText = '';
+    success.innerText = '';
+    error.removeClass('show');
+    success.removeClass('show');
+
+    var name = nameInput.val(),
+        email = emailInput.val(),
+        message = messageInput.val();
+
+    if (name.length <= 2) {
+      error.text(function() {
+        error.addClass('show');
+        return error.text() + 'name is to short ';
+      });
+    }
+
+    if (email.indexOf('@') == -1) {
+      error.text(function() {
+        error.addClass('show');
+        return error.text() + "email is not valid ";
+      });
+    }
+
+    if (email.indexOf('.') == -1) {
+      error.text(function() {
+        error.addClass('show');
+        return error.text() + "email is not valid ";
+      });
+    }
+
+    if (message.length <= 10) {
+      error.text(function() {
+        error.addClass('show');
+        return error.text() + "message is too short ";
+      });
+    }
+  })
 
 });
