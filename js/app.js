@@ -211,7 +211,7 @@ $(function() {
       }
       if (isValid === true) {
         success.addClass('show');
-        success.text('Message sent! ');
+        success.text('Message sent! (not really, gh-pages is not supporting PHP...)');
       }
     }
     checkForm();
