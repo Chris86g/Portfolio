@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Chris Glinka - Portfolio</title>
 
-    <link rel="icon" type="image/x-icon" href="images/icon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico">
     <link rel="stylesheet" href="./css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 
@@ -13,6 +13,13 @@
     <meta property="og:title" content="Chris Glinka - Portfolio" />
     <meta property="og:description" content="Junior Frontend Dev looking for first job in IT" />
     <meta property="og:image" content="images/og.jpg" />
+
+    <meta name="application-name" content="Chris Glinka - portfolio"/>
+    <meta name="msapplication-square70x70logo" content="images/small.jpg"/>
+    <meta name="msapplication-square150x150logo" content="images/medium.jpg"/>
+    <meta name="msapplication-wide310x150logo" content="images/wide.jpg"/>
+    <meta name="msapplication-square310x310logo" content="images/large.jpg"/>
+    <meta name="msapplication-TileColor" content="#cc7700"/>
 
     <script src="https://use.fontawesome.com/dbf61c4794.js"></script>
     <script src=  'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
@@ -24,10 +31,10 @@
   <div class="mobile_menu menu_background">
     <div class="topButtons socialmedia">
       <div class="hamburger" id="hamburger"><i class="fa fa-3x fa-bars" aria-hidden="true"></i></div>
-      <a href='mailto:krzysztof.m.glinka@gmail.com' target="_blank"><img src="images/email.png"></a>
-      <a href='https://www.linkedin.com/in/frontend-chris-glinka' target="_blank"><img src="images/in.png"></a>
-      <a href='https://www.facebook.com/K.M.Glinka' target="_blank"><img src="images/fb2.png"></a>
-      <a href='https://github.com/Chris86g' target="_blank"><img src="images/GH.png"></a>
+      <a href='mailto:krzysztof.m.glinka@gmail.com' target="_blank"><img src="images/email.png" alt="email"></a>
+      <a href='https://www.linkedin.com/in/frontend-chris-glinka' target="_blank"><img src="images/in.png" alt="linkedin"></a>
+      <a href='https://www.facebook.com/K.M.Glinka' target="_blank"><img src="images/fb2.png" alt="facebook"></a>
+      <a href='https://github.com/Chris86g' target="_blank"><img src="images/GH.png" alt="github"></a>
     </div>
     <nav class="mobile_nav" id="mobileNav">
       <ul>
@@ -66,10 +73,10 @@
       </ul>
     </nav>
     <div class="socialmedia">
-      <a href='mailto:krzysztof.m.glinka@gmail.com' target="_blank"><img src="images/email.png"></a>
-      <a href='https://www.linkedin.com/in/frontend-chris-glinka' target="_blank"><img src="images/in.png"></a>
-      <a href='https://www.facebook.com/K.M.Glinka' target="_blank"><img src="images/fb2.png"></a>
-      <a href='https://github.com/Chris86g' target="_blank"><img src="images/GH.png"></a>
+      <a href='mailto:krzysztof.m.glinka@gmail.com' target="_blank"><img src="images/email.png" alt="email"></a>
+      <a href='https://www.linkedin.com/in/frontend-chris-glinka' target="_blank"><img src="images/in.png" alt="linkedin"></a>
+      <a href='https://www.facebook.com/K.M.Glinka' target="_blank"><img src="images/fb2.png" alt="facebook"></a>
+      <a href='https://github.com/Chris86g' target="_blank"><img src="images/GH.png" alt="github"></a>
     </div>
   </aside>
 
@@ -188,7 +195,7 @@
         <p class="module c2">
           Beside of regular, full time job, which is not related to the IT at all, I'm still improving my knowledge.<strong class="strong"> Slowly, but constantly, every day I'm going forward.</strong> With my positive attitude and open mind, I can bring the new value to your company. Do you want to know more? Just fill the form, and I will answer all the questions. If you have any comments, or want to help me to improve my skills, please let me know, all tips are more than welome. Regards!
         </p>
-        <form action="" method="post">
+        <form>
           <fieldset>
             <input type="text" name="name" placeholder="name" class="module c3" id="nameInput">
             <input type="email" name="email" placeholder="email" class="module c4" id="emailInput">
@@ -198,6 +205,20 @@
             <input type="submit" class="submit module c6" value="send">
           </fieldset>
         </form>
+
+        <!-- <?php
+
+          if(isset($_GET['error'])){
+            $msg = urldecode($_GET['error']);
+            echo '<div style="color:red;">' . msg . '<div>';
+          }
+
+          if(isset($_GET['success'])){
+            $msg = urldecode($_GET['success']);
+            echo '<div style="color:green;">' . msg . '<div>';
+          }
+        ?> -->
+
         <footer>
           <p> Copyright © 2017 Chris_G LTD. All rights reserved.</p>
         </footer>
