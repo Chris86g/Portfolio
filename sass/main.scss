@@ -234,6 +234,7 @@ section .shade-in {
 
   .hamburger i {
     padding-right: 0.5rem;
+    cursor: pointer;
   }
 
   img {
@@ -703,6 +704,10 @@ section .shade-in {
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#97db01', endColorstr='#211401', GradientType=1 );
         }
       }
+    }
+
+    form:focus {
+      outline: none;
     }
 
     .show {
