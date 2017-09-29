@@ -99,13 +99,13 @@ section {
 }
 
 .intro .shade {
-  animation: shade-in 1s forwards;
-  animation-delay: 2s;
+  animation: shade-in .3s forwards;
+  animation-delay: 1s;
 }
 
 section .shade-in {
-  animation: shade-in 1s forwards;
-  animation-delay: 2s;
+  animation: shade-in .3s forwards;
+  animation-delay: 1s;
 }
 
 @keyframes shade-in {
@@ -292,7 +292,7 @@ section .shade-in {
         }
 
         .welcome-animation {
-          animation: show-letters 0.4s forwards;
+          animation: show-letters 0.2s forwards;
         }
 
         @keyframes show-letters {
@@ -316,75 +316,75 @@ section .shade-in {
         }
 
         .w1 {
-          animation-delay: 3s;
+          animation-delay: 1.5s;
         }
 
         .e2 {
-          animation-delay: 3.2s;
+          animation-delay: 1.6s;
         }
 
         .l3 {
-          animation-delay: 3.4s;
+          animation-delay: 1.7s;
         }
 
         .c4 {
-          animation-delay: 3.6s;
+          animation-delay: 1.8s;
         }
 
         .o5 {
-          animation-delay: 3.8s;
+          animation-delay: 1.9s;
         }
 
         .m6 {
-          animation-delay: 4s;
+          animation-delay: 2s;
         }
 
         .e7 {
-          animation-delay: 4.2s;
+          animation-delay: 2.1s;
         }
 
         .t8 {
-          animation-delay: 4.8s;
+          animation-delay: 2.4s;
         }
 
         .o9 {
-          animation-delay: 5s;
+          animation-delay: 2.5s;
         }
 
         .m10 {
-          animation-delay: 5.6s;
+          animation-delay: 2.8s;
         }
 
         .y11 {
-          animation-delay: 5.8s;
+          animation-delay: 2.9s;
         }
 
         .w12 {
-          animation-delay: 6.4s;
+          animation-delay: 3.2s;
         }
 
         .e13 {
-          animation-delay: 6.6s;
+          animation-delay: 3.3s;
         }
 
         .b14 {
-          animation-delay: 6.8s;
+          animation-delay: 3.4s;
         }
 
         .s15 {
-          animation-delay: 7s;
+          animation-delay: 3.5s;
         }
 
         .i16 {
-          animation-delay: 7.2s;
+          animation-delay: 3.6s;
         }
 
         .t17 {
-          animation-delay: 7.4s;
+          animation-delay: 3.7s;
         }
 
         .e18 {
-          animation-delay: 7.6s;
+          animation-delay: 3.8s;
         }
       }
     }
@@ -398,8 +398,8 @@ section .shade-in {
         visibility: hidden;
         font-size: 3em;
         text-shadow: 0 0 3px #51b2fb;
-        animation: show-name 0.3s forwards;
-        animation-delay: 9s;
+        animation: show-name 0.2s forwards;
+        animation-delay: 4.3s;
         overflow: hidden;
       }
 
@@ -408,8 +408,8 @@ section .shade-in {
         font-size: 2em;
         text-shadow: 0 0 3px #51b2fb;
         text-align: right;
-        animation: show-name 0.3s forwards;
-        animation-delay: 10s;
+        animation: show-name 0.2s forwards;
+        animation-delay: 4.5s;
         overflow: hidden;
       }
       @keyframes show-name {
@@ -529,7 +529,7 @@ section .shade-in {
         }
 
         .slide-in {
-          animation: slide-in 0.5s ease-out forwards;
+          animation: slide-in 0.3s ease-out forwards;
         }
         @keyframes slide-in {
           0% {
@@ -544,23 +544,23 @@ section .shade-in {
         }
 
         .treasure {
-          animation-delay: 7s;
+          animation-delay: 3.6s;
         }
 
         .shamrock {
-          animation-delay: 5s;
+          animation-delay: 2s;
         }
 
         .drum {
-          animation-delay: 6s;
+          animation-delay: 2.8s;
         }
 
         .wine {
-          animation-delay: 5.5s;
+          animation-delay: 2.4s;
         }
 
         .nasa {
-          animation-delay: 6.5s;
+          animation-delay: 3.2s;
         }
       }
     }
@@ -741,47 +741,47 @@ section .shade-in {
 }
 
 .a1 {
-  animation-delay: 3.5s;
+  animation-delay: 2s;
 }
 
 .a2 {
-  animation-delay: 4.5s;
+  animation-delay: 2.4s;
 }
 
 .a3 {
-  animation-delay: 5.5s;
+  animation-delay: 2.8s;
 }
 
 .a4 {
-  animation-delay: 9.5s;
+  animation-delay: 3.2s;
 }
 
 .a5 {
-  animation-delay: 10s;
+  animation-delay: 3.6s;
 }
 
 .c1 {
-  animation-delay: 3.5s;
+  animation-delay: 2s;
 }
 
 .c2 {
-  animation-delay: 4.5s;
+  animation-delay: 2.4s;
 }
 
 .c3 {
-  animation-delay: 8.5s;
+  animation-delay: 2.8s;
 }
 
 .c4 {
-  animation-delay: 9s;
+  animation-delay: 3.2s;
 }
 
 .c5 {
-  animation-delay: 9.5s;
+  animation-delay: 3.6s;
 }
 
 .c6 {
-  animation-delay: 10s;
+  animation-delay: 4s;
 }
 
 .already-visible {
@@ -920,7 +920,7 @@ section .shade-in {
     }
 
     .project img {
-      animation-delay: 1s !important;
+      animation-delay: .5s !important;
     }
 
     .unknown {
