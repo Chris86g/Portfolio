@@ -231,6 +231,12 @@ section .shade-in {
 .socialmedia {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+  }
 
   .hamburger i {
     padding-right: 0.5rem;
