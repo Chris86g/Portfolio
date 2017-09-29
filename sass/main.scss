@@ -706,10 +706,6 @@ section .shade-in {
       }
     }
 
-    form:focus {
-      outline: none;
-    }
-
     .show {
       display: flex !important;
     }
@@ -724,6 +720,10 @@ section .shade-in {
       }
     }
   }
+}
+
+*:focus {
+  outline: none !important;
 }
 
 .container {
