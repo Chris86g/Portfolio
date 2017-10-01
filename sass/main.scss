@@ -878,6 +878,12 @@ section .shade-in {
       font-size: 1.2em;
     }
 
+    .project_wrapper{
+      .project {
+        width: 40vw;
+      }
+    }
+
     .unknown {
       font-size: 6em;
     }
@@ -915,13 +921,13 @@ section .shade-in {
     }
   }
 
-@media (max-width: 485px) {
+@media (max-width: 630px) {
   .projects .container {
     margin: 0;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 630px) {
   .intro .container {
     h1 {
       font-size: 2.8em;
@@ -940,7 +946,9 @@ section .shade-in {
       }
     }
   }
+}
 
+@media (max-width: 425px) {
   .about .container {
     h3 {
       font-size: 1em;
